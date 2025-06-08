@@ -27,3 +27,21 @@ SDL_Surface* get_window_surface(SDL_Window* window) {
   return surface;
 }
 
+void draw_grid(SDL_Surface* surface, int rows, int cols) {
+  if (!surface) return;
+
+  Uint32 color = SDL_MapRGB(surface->format, 255, 255, 255);
+  int cell_width = surface->w / cols;
+  int cell_height = surface->h / rows;
+
+  for (int i = 0; i <= rows; i++) {
+    SDL_Rect line = {0, i * cell_height, surface->w, 1};
+    SDL_FillRect(surface, &line, color);
+  }
+
+  for (int j = 0; j <= cols; j++) {
+    SDL_Rect line = {j * cell_width, 0, 1, surface->h};
+    SDL_FillRect(surface, &line, color);
+  }
+}
+

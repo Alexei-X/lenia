@@ -4,7 +4,7 @@
 
 int main(int argc, char** argv) {
 
-  SDL_Window* window = create_window("Lenia", 800, 600);
+  SDL_Window* window = create_window("Lenia", 1200, 800);
   SDL_Surface* surface = get_window_surface(window);
 
   bool is_running = true;
@@ -18,8 +18,7 @@ int main(int argc, char** argv) {
       }
       
     }
-    Uint32 color = SDL_MapRGB(surface->format, 120, 70, 20);
-    SDL_FillRect(surface, NULL, color);
+    draw_grid(surface, 100, 100);
     SDL_UpdateWindowSurface(window);
   }
 

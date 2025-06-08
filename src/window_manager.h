@@ -8,5 +8,6 @@
 
 SDL_Window* create_window(const char* title, int width, int height);
 SDL_Surface* get_window_surface(SDL_Window* window);
+void draw_grid(SDL_Surface* surface, int rows, int cols);
 
 #endif // _WINDOW_MANAGER_H
