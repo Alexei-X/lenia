@@ -1,12 +1,13 @@
-#ifnef _GRID_H
-#define _GRID_H
+#ifndef GRID_H
+#define GRID_H
 #include "state.h"
 
-struct Grid {
+typedef struct {
   int width;        // Width of the Grid
   int height;       // Height of the Grid
-  CellState cells[width][height]; // 2D array of CellState objects
+  CellState** cells; // 2D array of CellState objects
 } Grid;
 
+int fill_grid(Grid* grid);
 
-#endif // _GRID_H
+#endif // GRID_H

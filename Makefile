@@ -1,6 +1,6 @@
 TARGET = lenia
 
-SRCS = src/main.c src/window_manager.c
+SRCS = src/main.c src/window_manager.c src/grid.c
 
 OBJS = $(SRCS:.c=.o)
 

@@ -1,0 +1,15 @@
+#ifndef CONSTANTS_H
+#define CONSTANTS_H
+
+#define WINDOW_WIDTH 1200
+#define WINDOW_HEIGHT 800
+
+#define N_WIDTH 150
+#define N_HEIGHT 100
+
+#define CELL_WIDTH WINDOW_WIDTH/N_WIDTH
+#define CELL_HEIGHT WINDOW_HEIGHT/N_HEIGHT
+
+#define P 10
+
+#endif // CONSTANTS_H

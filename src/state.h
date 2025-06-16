@@ -1,9 +1,9 @@
-#ifndef _CELL_STATE_H
-#define _CELL_STATE_H
+#ifndef CELL_STATE_H
+#define CELL_STATE_H
 
 #define P 10
 
-struct CellState {
+typedef struct CellState {
   int x;          // X coordinate of the cell
   int y;          // Y coordinate of the cell
   float value;   // Value of the cell
@@ -11,4 +11,4 @@ struct CellState {
 
 
 
-#endif // _CELL_STATE_H
+#endif // CELL_STATE_H
